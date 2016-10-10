@@ -8,3 +8,5 @@ RUN sudo apt-get update
 RUN sudo apt-get install -y python3.5
 RUN sudo wget https://bootstrap.pypa.io/get-pip.py
 RUN sudo python3.5 get-pip.py
+RUN sudo pip install virtualenv
+#CMD ["/bin/bash"]
