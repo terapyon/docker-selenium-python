@@ -1,5 +1,9 @@
 FROM selenium/standalone-chrome
 MAINTAINER "Manabu TERAD" <terada@cmscom.jp>
+RUN sudo locale-gen en_US.UTF-8  
+ENV LANG en_US.UTF-8  
+ENV LANGUAGE en_US:en  
+ENV LC_ALL en_US.UTF-8
 RUN sudo apt-get update
 RUN sudo apt-get install -y build-essential
 RUN sudo apt-get install -y libpq-dev
